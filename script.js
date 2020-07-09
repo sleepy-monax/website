@@ -76,7 +76,7 @@ PROJECTS.forEach(project => {
     µ("#projects").innerHTML += `
         <div class="project">
             <img class="project-image" src="${project.image}"></img>
-            
+
             <div class="project-name">${project.name}</div>
             <div class="project-description">${project.description}</div>
             <span class="project-techno">${renderTechno(project)}</span>
