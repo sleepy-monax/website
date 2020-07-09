@@ -49,6 +49,11 @@ a:after {
     font-weight: bolder;
     margin-bottom: 16px;
     color: #06f;
+    text-align: center;
+}
+
+.hero-subtitle{
+text-align: center;
 }
 
 
@@ -59,6 +64,8 @@ a:after {
 .hero-action{
     margin-top: 32px;
     font-size: larger;
+text-align: center;
+
 }
 
 .social-links{
