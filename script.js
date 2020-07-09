@@ -19,7 +19,7 @@ PROJECTS = [
         image: "assets/hevadea.png",
         description: "A game about exploring a randomly generated world.",
         github: "https://github.com/terra-monax/hevadea-monogame",
-        technologies: ["C#", "MonoGame"],
+        technologies: ["C#", ".NET", "MonoGame"],
     },
     {
         name: "Four In a Row",
@@ -29,7 +29,7 @@ PROJECTS = [
         technologies: ["Java", "JavaFX", "GSON", "OpenAL"],
     },
     {
-        name: "Ufore",
+        name: "Udfore",
         image: "assets/udfore.svg",
         description: "A new programming language.",
         github: "https://github.com/skiftOS/udfore",

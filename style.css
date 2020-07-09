@@ -1,16 +1,20 @@
 body {
     font-family: 'Jost';
-    background-color: #02142e;
-    color: #fff;
+    background-color: #fff;
+    color: #000;
 }
 
 a {
-    box-shadow: inset 0 -8px 0 0 #06fa;
+    transition: all 0.1s;
+}
 
+a:hover {
+    box-shadow: inset 0 -8px 0 0 #06fa;
 }
 
 a:after {
     content: "↗";
+    font-weight: bold;
 }
 
 .section {
@@ -28,6 +32,7 @@ a:after {
 
 .hero {
     height: 100vh;
+    color: white;
     background-color: #010a18;
 
     display: flex;
@@ -95,8 +100,9 @@ text-align: center;
 
 .project-techno span {
     margin-right: 8px;
-    background-color:  #06fa;
-    padding: 2px 8px;
+    color: #06f;
+    background-color:  #06f4;
+    padding: 2px 12px;
     border-radius: 100px;
 }
 
