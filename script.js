@@ -2,7 +2,7 @@ PROJECTS = [
     {
         name: "skiftOS",
         image: "assets/skift.png",
-        description: "A new written from scratch operating system targeting the x86 platform.",
+        description: "A hobby operating system built for learning and for fun targeting the x86 platform. It features a kernel named hjert, a graphical user interface with a compositing window manager, and familiar UNIX utilities.",
         github: "https://github.com/skiftOS/skift",
         technologies: ["C", "Make", "GRUB", "QEMU"],
     },
@@ -74,11 +74,11 @@ function renderTechno(project) {
 
 PROJECTS.forEach(project => {
     µ("#projects").innerHTML += `
-        <div class="project">
-            <img class="project-image" src="${project.image}"></img>
+        <div class="project big-spacer">
+            <img class="project-image spacer" src="${project.image}"></img>
 
             <div class="project-name">${project.name}</div>
-            <div class="project-description">${project.description}</div>
+            <div class="project-description spacer">${project.description}</div>
             <span class="project-techno">${renderTechno(project)}</span>
             <span class="project-github"><a href="${project.github}">GitHub</a></span>
         </div>

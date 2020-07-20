@@ -21,14 +21,16 @@ a:after {
 .section {
     max-width: 560px;
     margin: 0 auto;
-    margin-bottom: 48px;
+    margin-top: 64px;
+    margin-bottom: 64px;
 }
 
 .section-header {
     font-size: larger;
     font-weight: bold;
     text-align: center;
-    padding-bottom: 8px;
+    font-size: 32px;
+    margin-bottom: 32px;
 }
 
 .hero {
@@ -40,7 +42,6 @@ a:after {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 16px;
 }
 
 .hero img {
@@ -51,7 +52,7 @@ a:after {
 
 
 .hero-title{
-    font-size: xx-large;
+    font-size: 32px;
     font-weight: bolder;
     margin-bottom: 16px;
     color: #06f;
@@ -80,15 +81,14 @@ text-align: center;
 }
 
 .project {
-    padding: 12px;
-    margin-bottom: 16px;
     border-radius: 6px;
+    overflow: hidden;
 }
 
 .project-image {
     border-radius: 6px;
     overflow: hidden;
-    margin-bottom: 16px;
+    width: 100%;
 }
 
 .project-name {
@@ -113,4 +113,12 @@ text-align: center;
 
 .footer-moji{
     font-size: 16px;
+}
+
+.spacer{
+    margin-bottom: 16px;
+}
+
+.big-spacer{
+    margin-bottom: 64px;
 }
