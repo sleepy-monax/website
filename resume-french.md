@@ -1,44 +1,59 @@
+---
+geometry: margin=3cm
+---
+
+\pagenumbering{gobble}
+
 # Van Bossuyt Nicolas
 
-- **GitHub**: https://github.com/sleepy-monax
-- **LinkedIn**: https://www.linkedin.com/in/nicolas-van-bossuyt/
-- **e-Mail**: nicolas.van.bossuyt@skiftos.org
-- **GSM**: +32495518100
+- **Domicile** : Ransart
+- **GSM** : +32495518100
+- **E-Mail** : nicolas.van.bossuyt@skiftos.org
+- **GitHub** : [\@sleepy-monax](https://github.com/sleepy-monax)
+- **LinkedIn** : [in/nicolas-van-bossuyt](https://www.linkedin.com/in/nicolas-van-bossuyt/)
 
 ## Compétences Techniques
 
-- Languages: C, C++, C#, Java, Python, HTML, CSS, JavaScript, TypeScript
+- Languages : C, C++, C#, Java, Python, HTML, CSS, JavaScript, TypeScript
 - Systèmes d'exploitation: Windows, GNU+Linux
-- Frameworks: React, Angular, Bootstrap, tailwindCSS, ASP\.net
-- Database: MySQL, SQLServer
-- Tools: VIM, git, make, node, figma, vscode
+- Frameworks : React, Angular, Bootstrap, tailwindCSS, ASPNET Core
+- Database : MySQL, SQLServer
+- Tools : VIM, GIT, GNUMake, Node, Figma, VSCode
 
-## Éducation
+## Études
 
-### Haute École Louvain en Hainaut
+### Haute École Louvain en Hainaut (Mons)
 
-- **Bachelier en informatique de gestion**
-- Septembre 2018 à ...
+- **Bachelier en Informatique de Gestion**
+- Septembre 2018 à juin 2021
 
-### Institue Technique Horticole
+### Institut Technique Horticole
 
-- **Science appliquée**
+- **Sciences Appliquées**
 - Technique de Transition
 - Septembre 2011 à juin 2016
 
-## Langues Étrangère
+## Langue Étrangère
 
-- Anglais: Lecture/Écriture
+- Anglais : Lecture/Écriture
 
 ## Projets Personnels
 
-### skiftOS
+ - **skiftOS**
+    - Un système d'exploitation simple, fait main, pour la plate-forme x86. Visent une API propre  tout en gardant l'esprit d'UNIX.
+    - 23 Contributeurs et 450 étoiles sur GitHub.
+    - Utiliser par A B.Tech ICT dans le cadre de leurs cours de system d'exploitation
+    - [https://github.com/skiftOS/skift](https://github.com/skiftOS/skift)
+    - [http://skiftos.org](http://skiftos.org)
 
- - Un système d'exploitation simple, fait main, pour la plate-forme x86. Visent une API propre  tout en gardant l'esprit d'UNIX.
- - https://github.com/skiftOS/skift
- - http://skiftos.org
+ - **Udfore**
+    - Un langage de programmation de bas niveau sûr et avec un typage statique.
+    - https://github.com/sleepy-monax/udfore
 
-### udfore
+- (Et bien plus encore sur http://sleepy-monax.skiftos.org)
 
- - Un langage de programmation de bas niveau sûr et avec un typage statique.
- - https://github.com/sleepy-monax/udfore
+## Loisirs
+
+ - Chant choral (5 ans)
+ - Scoutisme (de Louveteau à Pionnier)
+ - Guitare auto-didacte.
