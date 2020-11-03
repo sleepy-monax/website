@@ -40,9 +40,9 @@ geometry: margin=3cm
 ## Projets Personnels
 
  - **skiftOS**
-    - Un système d'exploitation simple, fait main, pour la plate-forme x86. Visent une API propre  tout en gardant l'esprit d'UNIX.
+    - Un système d'exploitation simple, fait main, pour la plate-forme x86. Visant une API propre tout en gardant l'esprit d'UNIX.
     - 23 Contributeurs et 450 étoiles sur GitHub.
-    - Utiliser par A B.Tech ICT dans le cadre de leurs cours de system d'exploitation
+    - Utilisé par A B.Tech ICT dans le cadre de leurs cours de système d'exploitation
     - [https://github.com/skiftOS/skift](https://github.com/skiftOS/skift)
     - [http://skiftos.org](http://skiftos.org)
 
