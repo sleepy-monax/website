@@ -23,8 +23,8 @@ a:after {
     margin: 0 auto;
     margin-top: 64px;
     margin-bottom: 64px;
-    margin-left: 16px;
-    margin-right: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 .section-header {
@@ -53,7 +53,7 @@ a:after {
 }
 
 
-.hero-title{
+.hero-title {
     font-size: 32px;
     font-weight: bolder;
     margin-bottom: 16px;
@@ -61,12 +61,11 @@ a:after {
     text-align: center;
 }
 
-.hero-subtitle{
-text-align: center;
+.hero-subtitle {
+	text-align: center;
 }
 
-
-.hero-links{
+.hero-links {
     padding-top: 16px;
 }
 
