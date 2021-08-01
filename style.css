@@ -23,6 +23,8 @@ a:after {
     margin: 0 auto;
     margin-top: 64px;
     margin-bottom: 64px;
+    margin-left: 16px;
+    margin-right: 16px;
 }
 
 .section-header {
