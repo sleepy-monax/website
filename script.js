@@ -1,11 +1,21 @@
-PROJECTS = [
+ACTIVE_PROJECTS = [
+    {
+        name: "BRUTAL",
+        image: "assets/brutal.png",
+        description: "🏢 An operating system inspired by brutalist design that combines the ideals of UNIX from the 1970s with modern technology and engineering. Inspired by brutalist design, BRUTAL combines the ideals of UNIX from the 1970s with modern technology and engineering.",
+        github: "https://github.com/skiftOS/skift",
+        technologies: ["C", "Make", "Stivale2", "QEMU"],
+    },
     {
         name: "skiftOS",
         image: "assets/skift.png",
-        description: "A hobby operating system built for learning and for fun targeting the x86 platform. It features a kernel named hjert, a graphical user interface with a compositing window manager, and familiar UNIX utilities.",
+        description: "🥑 A hobby operating system built from scratch in modern C++. Featuring a reactive UI library and a strong emphasis on user experience.",
         github: "https://github.com/skiftOS/skift",
-        technologies: ["C", "Make", "GRUB", "QEMU"],
-    },
+        technologies: ["C++", "Make", "Stivale2", "QEMU"],
+    }
+];
+
+UNMAINTAINED_PROJECTS = [
     {
         name: "Faceter",
         image: "assets/faceter.png",
@@ -72,7 +82,20 @@ function renderTechno(project) {
     return result;
 }
 
-PROJECTS.forEach(project => {
+ACTIVE_PROJECTS.forEach(project => {
+    µ("#projects").innerHTML += `
+        <div class="project big-spacer">
+            <img class="project-image spacer" src="${project.image}"></img>
+
+            <div class="project-name">${project.name}</div>
+            <div class="project-description spacer">${project.description}</div>
+            <span class="project-techno">${renderTechno(project)}</span>
+            <span class="project-github"><a href="${project.github}">GitHub</a></span>
+        </div>
+    `;
+});
+
+UNMAINTAINED_PROJECTS.forEach(project => {
     µ("#projects").innerHTML += `
         <div class="project big-spacer">
             <img class="project-image spacer" src="${project.image}"></img>
