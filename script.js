@@ -2,7 +2,7 @@ ACTIVE_PROJECTS = [
     {
         name: "BRUTAL",
         image: "assets/brutal.png",
-        description: "🏢 An operating system inspired by brutalist design that combines the ideals of UNIX from the 1970s with modern technology and engineering. Inspired by brutalist design, BRUTAL combines the ideals of UNIX from the 1970s with modern technology and engineering.",
+        description: "🏢 An operating system inspired by brutalist design that combines the ideals of UNIX from the 1970s with modern technology and engineering.",
         github: "https://github.com/brutal-org/brutal",
         technologies: ["C", "Make", "Stivale2", "QEMU"],
     },
