@@ -21,7 +21,7 @@ UNMAINTAINED_PROJECTS = [
         image: "assets/faceter.png",
         description: "A social media platform.",
         github: "https://github.com/julien-lepers/faceter",
-        technologies: ["HTML", "CSS", "JavaScript", "Preact", "HTM", "PHP", "SQL"],
+        technologies: ["HTML", "CSS", "JavaScript", "Preact", "PHP", "SQL"],
 
     },
     {
