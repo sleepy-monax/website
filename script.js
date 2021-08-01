@@ -83,7 +83,7 @@ function renderTechno(project) {
 }
 
 ACTIVE_PROJECTS.forEach(project => {
-    µ("#projects").innerHTML += `
+    µ("#activeprojects").innerHTML += `
         <div class="project big-spacer">
             <img class="project-image spacer" src="${project.image}"></img>
 
@@ -96,7 +96,7 @@ ACTIVE_PROJECTS.forEach(project => {
 });
 
 UNMAINTAINED_PROJECTS.forEach(project => {
-    µ("#projects").innerHTML += `
+    µ("#unmaintainedprojects").innerHTML += `
         <div class="project big-spacer">
             <img class="project-image spacer" src="${project.image}"></img>
 
