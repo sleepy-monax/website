@@ -2,80 +2,106 @@
 <html>
 
 <head>
-    <title>Van Bossuyt Nicolas</title>
+    <title>SMNX</title>
+    <link rel="icon" type="image/png" href="favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://indestructibletype.com/fonts/Jost.css" type="text/css" charset="utf-8" />
-    <link rel="stylesheet" href="normalize.css" type="text/css" charset="utf-8" />
-    <link rel="stylesheet" href="style.css" type="text/css" charset="utf-8" />
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+    <style>
+        #card {
+            max-width: 360px;
+            min-height: 360px;
+            background-color: black;
+            color: white;
+
+            position: sticky;
+            top: 0;
+            left: 0;
+        }
+
+        @media screen and (max-width: 640px) {
+            #card {
+                max-width: unset;
+                scroll-snap-align: center;
+                min-height: 100vh;
+                float: unset;
+                top: unset;
+                position: static;
+            }
+        }
+
+        #container {
+            background-color: grey;
+            color: black;
+            font-family: 'Jost';
+            scroll-snap-type: y mandatory;
+            height: 100vh;
+            overflow-y: scroll;
+        }
+
+        .project {
+            scroll-snap-align: center;
+            min-height: 100vh;
+        }
+
+        .indicator {}
+
+        #page-0 {
+            background-image: url("background0.png");
+            background-size: auto;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        #page-1 {
+            background-image: url("background1.png");
+            background-size: auto;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="hero">
-        <img src="assets/me.jpeg">
+    <div id="container" class="">
+        <div id="card" class="flex flex-col min-h-0 p-8">
+            <div class="font-bold text-6xl">
+                NICOLAS<br>VAN<br>BOSSUYT
+            </div>
 
-        <div class="hero-title">
-            Van Bossuyt Nicolas
+            <div class="flex-grow"></div>
+
+            <div class="flex justify-center gap-4">
+                <DIV><a href="resume/french.pdf">RESUME</a></DIV>
+                <DIV><a href="https://github.com/sleepy-monax">GITHUB</a></DIV>
+                <DIV><a href="https://twitter.com/sleepy_monax">TWITTER</a></DIV>
+                <DIV><a href="https://discordapp.com/users/217368892455124993">DISCORD</a></DIV>
+            </div>
+
+            <div class="flex-grow"></div>
+
+            <div class="flex justify-end">
+                <img width="32" src="corner.svg" />
+            </div>
         </div>
 
-        <div class="hero-subtitle" style="max-width: 520px;">
-            Hi 😄 My name is Nicolas, I'm studying business computing. <br />
-            I am passionate about system programming and hamsters. <br />
-            One of my most important project is <a href="https://github.com/skiftOS/skift">skiftOS</a>, an operating
-            system written entirely by me for the x86 Platform.
+        <div id="page-0" class="flex items-center project">
+            <div class="font-serif bg-black text-white p-8 m-auto max-w-prose">
+                <div class="mb-4 text-xl">
+                    "Programmers are the Gods of their tiny worlds. They create something out of nothing. In their
+                    command-line
+                    universe,
+                    they say when it’s sunny and when it rains. And the tiny universe complies."
+                </div>
+                <a href="http://powazek.com/posts/1655">- http://powazek.com/posts/1655</a>
+            </div>
         </div>
 
-        <div class="hero-action">
-            You can download my resume from <a href="./resume-french.pdf">here</a>
-        </div>
-
-        <div class="hero-action">
-            Scroll to see projects I worked on <b>↘</b>
-        </div>
-    </div>
-
-    <div id="activeprojects" class="section">
-        <div class="section-header">Active Projects</div>
-
-        <noscript>
-            <center>
-                Oups 😅 Look like you have javascript disabled...
-                <br />You can still check my work on <a href="https://github.com/NicolasVanBossuyt">GitHub</a>
-            </center>
-        </noscript>
-    </div>
-
-    <div id="unmaintainedprojects" class="section">
-        <div class="section-header">Unmaintained Projects</div>
-
-        <noscript>
-            <center>
-                Oups 😅 Look like you have javascript disabled...
-                <br />You can still check my work on <a href="https://github.com/NicolasVanBossuyt">GitHub</a>
-            </center>
-        </noscript>
-    </div>
-
-    <div id="social" class="section">
-        <div class="section-header">Socials</div>
-        <div class="social-links">
-            <a href="https://github.com/sleepy-monax">GitHub</a>
-            <a href="https://www.youtube.com/user/creeperkiller64/videos?view_as=subscriber">Youtube</a>
-            <a href="https://www.linkedin.com/in/nicolas-van-bossuyt/">LinkedIn</a>
-            <a href="https://www.reddit.com/user/TheMonax">Reddit</a>
-            <a href="https://twitter.com/sleepy_monax">Twitter</a>
-        </div>
-    </div>
-
-    <div id="footer" class="section">
-        <div class="footer-moji">
-            👾👨‍💻🐹
-        </div>
-        <div class="footer-text">
-            © 2021 Van Bossuyt Nicolas
-        </div>
+        <!--<div id="page-1" class="project"></div>
+        <div class="project"></div>
+        <div class="project"></div> -->
     </div>
 </body>
-
-<script type="text/javascript" src="script.js"></script>
 
 </html>
