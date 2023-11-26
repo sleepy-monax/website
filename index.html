@@ -5,102 +5,56 @@
     <title>SMNX</title>
     <link rel="icon" type="image/png" href="favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://indestructibletype.com/fonts/Jost.css" type="text/css" charset="utf-8" />
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 
-    <style>
-        #card {
-            max-width: 360px;
-            min-height: 360px;
-            background-color: black;
-            color: white;
+    <script>
+        tailwind.config = {
 
-            position: sticky;
-            top: 0;
-            left: 0;
+        }
+    </script>
+
+    <style type="text/tailwindcss">
+        :root {
+            font-family: Inter, sans-serif;
+            font-feature-settings: 'liga' 1, 'calt' 1;
+
+            background-image: url('bg.png');
+            background-size: cover;
+            background-position: center;
         }
 
-        @media screen and (max-width: 640px) {
-            #card {
-                max-width: unset;
-                scroll-snap-align: center;
-                min-height: 100vh;
-                float: unset;
-                top: unset;
-                position: static;
+        @supports (font-variation-settings: normal) {
+            :root {
+                font-family: InterVariable, sans-serif;
             }
         }
 
-        #container {
-            background-color: grey;
-            color: black;
-            font-family: 'Jost';
-            scroll-snap-type: y mandatory;
-            height: 100vh;
-            overflow-y: scroll;
-        }
-
-        .project {
-            scroll-snap-align: center;
-            min-height: 100vh;
-        }
-
-        .indicator {}
-
-        #page-0 {
-            background-image: url("background0.png");
-            background-size: auto;
-            background-repeat: no-repeat;
-            background-position: center;
-        }
-
-        #page-1 {
-            background-image: url("background1.png");
-            background-size: auto;
-            background-repeat: no-repeat;
-            background-position: center;
+        .link {
+            @apply text-2xl font-bold text-blue-500 hover:text-blue-400 visited:text-purple-600 hover:underline
         }
     </style>
 </head>
 
-<body>
-    <div id="container" class="">
-        <div id="card" class="flex flex-col min-h-0 p-8">
-            <div class="font-bold text-6xl">
-                NICOLAS<br>VAN<br>BOSSUYT
-            </div>
-
-            <div class="flex-grow"></div>
-
-            <div class="flex justify-center gap-4">
-                <DIV><a href="resume/french.pdf">RESUME</a></DIV>
-                <DIV><a href="https://github.com/sleepy-monax">GITHUB</a></DIV>
-                <DIV><a href="https://twitter.com/sleepy_monax">TWITTER</a></DIV>
-                <DIV><a href="https://discordapp.com/users/217368892455124993">DISCORD</a></DIV>
-            </div>
-
-            <div class="flex-grow"></div>
-
-            <div class="flex justify-end">
-                <img width="32" src="corner.svg" />
-            </div>
+<body class="w-screen h-screen text-zinc-100 flex items-center justify-center">
+    <div class="max-w-prose bg-zinc-950 flex flex-col gap-8 p-16 rounded-lg border border-zinc-800 m-8">
+        <div>
+            <h1 class="text-6xl font-black">
+                SMNX
+            </h1>
+            <i class="font-serif">What i cannot create i do not understand</i>
         </div>
 
-        <div id="page-0" class="flex items-center project">
-            <div class="font-serif bg-black text-white p-8 m-auto max-w-prose">
-                <div class="mb-4 text-xl">
-                    "Programmers are the Gods of their tiny worlds. They create something out of nothing. In their
-                    command-line
-                    universe,
-                    they say when it’s sunny and when it rains. And the tiny universe complies."
-                </div>
-                <a href="http://powazek.com/posts/1655">- http://powazek.com/posts/1655</a>
-            </div>
+        <div class="text-2xl font-light flex flex-col gap-2">
+            <p>
+                <a class="link" href="https://skift.smnx.sh">SKIFT</a>
+                <a class="link" href="https://brutal.smnx.sh">BRUTAL</a>
+                <a class="link" href="resume/french.pdf">RESUME</a>
+                <a class="link" href="https://twitter.com/sleepy_monax">TWITTER</a>
+                <a class="link" href="https://discordapp.com/users/217368892455124993">DISCORD</a>
+            </p>
         </div>
-
-        <!--<div id="page-1" class="project"></div>
-        <div class="project"></div>
-        <div class="project"></div> -->
     </div>
 </body>
 

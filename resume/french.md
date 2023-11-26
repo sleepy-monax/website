@@ -9,22 +9,36 @@ geometry: "left=2cm,right=2cm,top=1cm,bottom=1cm"
 
 ## Bachelier en informatique de gestion
 
-- **Domicile** : Ransart
-- **GSM** : +32 495 51 81 00
-- **E-Mail** : nicolas.van.bossuyt@gmail.com
+- **E-Mail** : me@smnx.sh
 - **GitHub** : [\@sleepy-monax](https://github.com/sleepy-monax)
 - **LinkedIn** : [in/nicolas-van-bossuyt](https://www.linkedin.com/in/nicolas-van-bossuyt/)
 
 ## Compétences Techniques
 
-- Langages : C, C++, C#, Java, Python, HTML, CSS, JS, TS
-- Systèmes d'exploitations: GNU+Linux, Windows
+- Langages : C, C++, Python, Javascript
+- Systèmes d'exploitations: GNU+Linux
 - Frameworks : React, Angular, TailwindCSS, ASP.NET Core, Godot, MonoGame
-- Serveurs: Node, Payara
-- Base de données : MySQL, SQLServer
+- Base de données : PosgreSQL, MySQL, SQLite
 - Outils : VIM, GIT, GNUMake, Figma, VSCode, Docker
 
 ## Experience
+
+### Odoo
+
+- Framework Developer
+- Février 2023 à aujourd'hui
+- Développement ORM
+- Maintenance de Wkhtmltopdf
+- C++, Python, Javascript, PostgreSQL
+- https://odoo.com
+
+### Underside
+
+- Fullstack Developer
+- Septembre 2021 à Février 2023
+- Développement d'application mobile, web et VR
+- React, Angular, Unity
+- https://underside.be
 
 ### Maxitoys (Stage)
 
@@ -49,20 +63,19 @@ geometry: "left=2cm,right=2cm,top=1cm,bottom=1cm"
 
 ## Projets Personnels
 
+- **skiftOS**
+  - skiftOS est un système d'exploitation de loisir conçu à partir de zéro pour les architectures ARM, x86 et RISC-V. Il est conçu pour être simple, moderne et modulaire, avec une bibliothèque centrale C++ moderne, une interface utilisateur réactive et un micro-noyau basé sur les capacités. Il est conçu pour être simple, moderne et modulaire, avec une bibliothèque de base C++ moderne, une interface utilisateur réactive et un micro-noyau basé sur les capacités. skiftOS valorise la simplicité, la modernité et la modularité, et possède plusieurs caractéristiques notables telles que le support multi-architecture et la facilité de piratage. Il est gratuit et open-source sous la licence MIT.
+  - [https://skift.smnx.sh](https://skift.smnx.sh)
+  - [https://github.com/skift-org/skift](https://github.com/skift-org/skift)
+
+
+
 - **BRUTAL**
   - Un système d'exploitation inspiré du brutalisme qui combine les idéaux d'UNIX des années 70 avec les technologies et l'ingénierie modernes.
   - [https://github.com/brutal-org/brutal](https://github.com/brutal-org/brutal)
-  - [https://brutal-org.netlify.app/](https://brutal-org.netlify.app/)
+  - [https://brutal.smnx.sh/](https://brutal.smnx.sh/)
 
-- (Mon portfolio https://sleepy-monax.skiftos.org)
 
 ## Langue Étrangère
 
 - Anglais
-
-## Loisirs
-
-- Streaming
-- Gaming
-- Chant
-- Scoutisme
