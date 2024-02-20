@@ -55,6 +55,7 @@
     #overlay-title {
         font-size: 5rem;
         text-align: center;
+        line-height: 1.2;
     }
 
     #overlay-subtitle {
@@ -316,6 +317,10 @@
                 2 * Math.PI
             );
             ctx.closePath();
+
+            // add glow
+            ctx.shadowColor = this.color;
+            ctx.shadowBlur = 10;
 
             ctx.fill();
         }
