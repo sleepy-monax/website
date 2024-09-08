@@ -1,3 +1,5 @@
+# Hi I'm **Clem**
+
 <img id="avatar" alt="LGPL3 License" src="avatar.jpeg" />
 <style>
     #avatar {
@@ -9,8 +11,6 @@
     }
 </style>
 
-Hi my name is **Clem** (she/her)
-
 I am a software engineer and I love building things like operating systems, compilers, tools, and web engines. This site is my tiny universe it's full of my thoughts, ideas, and stuff I made with my friends.
 
 ## Projects
@@ -19,7 +19,7 @@ This is all the stuff I made or contributed to:
 
  - [skiftOS](https://github.com/skift-org/skift) : A hobby operating system built from scratch for ARM, x86, and RISC-V architectures. It is designed to be simple, modern, and modular, featuring a modern C++ core library, reactive UI, and a capability-based microkernel.
  - [Vaev](https://github.com/skift-org/skift/tree/main/src/web) : A lightning-fast, lightweight, and secure HTML/CSS engine built for effortless document generation and streamlined web browsing.
- - [Paper Muncher](https://github.com/odoo/paper-muncher) : An experimental document generation tool currently in its early stages, focused on exploring new ideas and performance optimizations with the long-term goal of potential integration with Odoo.
+ - [Paper Muncher](https://github.com/odoo/paper-muncher) : An experimental document generation tool currently in its early stages.
  - [BRUTAL](https://github.com/brutal-org/brutal) : An operating system inspired by brutalist design that combines the ideals of UNIX from the 1970s with modern technology and engineering.
  - [CuteKit](https://github.com/cute-engineering/cutekit) : The ✨ magical ✨ build system and package manager
  - [Cat](https://cute-engineering.github.io/cat/) : A tiny static site generator.
