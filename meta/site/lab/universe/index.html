@@ -1,0 +1,206 @@
+<style>
+    * {
+        color: white;
+    }
+
+    #canvas {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background: #0b1119;
+    }
+</style>
+
+<canvas id="canvas"></canvas>
+
+<a href=".." style="position: absolute; top: 10px; left: 10px; color: white; font-family:sans-serif;">
+    Back to the lab
+</a>
+
+<script type="module">
+    const COLORS = [
+        "#FF7900",
+        "#F94E5D",
+        "#CA4B8C",
+        "#835698",
+        "#445582",
+        "#2F4858",
+        "#845EC2",
+        "#D65DB1",
+        "#FF6F91",
+        "#FF9671",
+        "#FFC75F",
+        "#F9F871",
+        "#F24B8E",
+        "#F6ACC2",
+        "#FFE3F1",
+        "#59BAB7",
+        "#1FAAFE",
+        "#00C6FF",
+        "#00DCE4",
+        "#10ECB8",
+        "#A0F68B",
+        "#F9F871",
+    ];
+
+    const Z = 35;
+
+    const random = {
+        uniform: (min, max) => Math.random() * (max - min) + min,
+    };
+
+    class Vec {
+        constructor(...components) {
+            this.components = components;
+        }
+
+        add(vec) {
+            this.components = this.components.map((c, i) => c + vec.components[i]);
+            return this;
+        }
+
+        sub(vec) {
+            this.components = this.components.map((c, i) => c - vec.components[i]);
+            return this;
+        }
+
+        div(vec) {
+            this.components = this.components.map((c, i) => c / vec.components[i]);
+            return this;
+        }
+
+        scale(scalar) {
+            this.components = this.components.map((c) => c * scalar);
+            return this;
+        }
+
+        multiply(vec) {
+            this.components = this.components.map((c, i) => c * vec.components[i]);
+            return this;
+        }
+
+        rotateXY(angle) {
+            const x =
+                this.components[0] * Math.cos(angle) -
+                this.components[1] * Math.sin(angle);
+            const y =
+                this.components[0] * Math.sin(angle) +
+                this.components[1] * Math.cos(angle);
+            this.components[0] = x;
+            this.components[1] = y;
+        }
+    }
+
+    const CENTER = new Vec(window.innerWidth / 2, window.innerHeight / 2);
+    const STARS = 50;
+
+    class Canvas {
+        constructor(id) {
+            this.canvas = document.createElement("canvas");
+
+            this.canvas.id = id;
+            this.canvas.width = window.innerWidth;
+            this.canvas.height = window.innerHeight;
+
+            window.addEventListener("resize", () => {
+                this.canvas.width = window.innerWidth;
+                this.canvas.height = window.innerHeight;
+            });
+
+            document.body.appendChild(this.canvas);
+            this.ctx = this.canvas.getContext("2d");
+        }
+
+        draw() {
+            const space = new Space();
+            const draw = () => {
+                this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
+                space.run(this.ctx);
+                CENTER.components[0] = window.innerWidth / 2;
+                CENTER.components[1] = window.innerHeight / 2;
+                requestAnimationFrame(draw);
+            };
+            draw();
+        }
+    }
+
+    class Star {
+        constructor() {
+            this.size = 10;
+            this.pos = this.getPosition();
+            this.screenPos = new Vec(0, 0);
+            this.vel = random.uniform(0.05, 0.25);
+            this.color = COLORS[Math.floor(Math.random() * COLORS.length)];
+            this.randomeSize = random.uniform(0.5, 1.5);
+        }
+
+        getPosition(scale = 35) {
+            const angle = random.uniform(0, 2 * Math.PI);
+            const radius =
+                random.uniform(window.innerHeight / scale, window.innerHeight) * scale;
+
+            const x = Math.cos(angle) * radius;
+            const y = Math.sin(angle) * radius;
+
+            return new Vec(x, y, Z);
+        }
+
+        update() {
+            this.pos.components[2] -= this.vel;
+            this.pos = this.pos.components[2] < 1 ? this.getPosition() : this.pos;
+            this.screenPos = new Vec(this.pos.components[0], this.pos.components[1])
+                .div(new Vec(this.pos.components[2], this.pos.components[2]))
+                .add(CENTER);
+
+            this.size = (Z - this.pos.components[2]) / (this.pos.components[2] * 0.2) * this.randomeSize;
+            this.pos.rotateXY(0.003);
+        }
+
+        draw(ctx) {
+            ctx.fillStyle = this.color;
+
+            ctx.beginPath();
+
+            ctx.arc(
+                this.screenPos.components[0],
+                this.screenPos.components[1],
+                this.size,
+                0,
+                2 * Math.PI
+            );
+            ctx.closePath();
+
+            // add glow
+            ctx.shadowColor = this.color;
+            ctx.shadowBlur = 10;
+
+            ctx.fill();
+        }
+    }
+
+    class Space {
+        constructor() {
+            this.stars = new Array(STARS).fill(null).map(() => new Star());
+        }
+
+        update() {
+            this.stars.forEach((star) => star.update());
+        }
+
+        draw(ctx) {
+            this.stars.forEach((star) => star.draw(ctx));
+        }
+
+        run(ctx) {
+            this.update();
+            this.stars.sort((a, b) => b.pos.components[2] - a.pos.components[2]);
+            this.draw(ctx);
+        }
+    }
+
+    const canvas = new Canvas("canvas");
+    canvas.draw();
+</script>

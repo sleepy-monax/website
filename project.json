@@ -1,0 +1,12 @@
+{
+    "$schema": "https://schemas.cute.engineering/stable/cutekit.manifest.project.v1",
+    "id": "sleepy-monax/website",
+    "type": "project",
+    "description": "My personal website",
+    "extern": {
+        "cute-engineering/cat": {
+            "git": "https://github.com/cute-engineering/cat.git",
+            "tag": "v0.7.1"
+        }
+    }
+}
