@@ -10,4 +10,5 @@ This is my wiki/blog/garden. It's a collection of notes, thoughts, and ideas tha
 
 ## Thoughs
 
+ - [My Gender](thoughs/my-gender.md)
  - [I Disabled Copilot (here)](thoughs/i-disabled-copilot.md)
