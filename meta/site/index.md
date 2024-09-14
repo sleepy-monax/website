@@ -4,9 +4,9 @@
 <style>
     #avatar {
         float: right;
-        width: 96px;
-        height: 96px;
-        margin-left: 10px;
+        width: 5rlh;
+        height: 5rlh;
+        margin-left: 0.5ch;
         border-radius: 999px;
     }
 </style>
