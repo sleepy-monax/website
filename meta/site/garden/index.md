@@ -8,10 +8,10 @@ This is my wiki/blog/garden. It's a collection of notes, thoughts, and ideas tha
 
 <hr>
 
-## Thoughs
+## Thoughts
 
- - [Fun Can Work](thoughs/fun-can-work.md)
- - [End of Growth](thoughs/end-of-growth.md)
- - [Expressing Myself](thoughs/expressing-myself.md)
- - [My Gender](thoughs/my-gender.md)
- - [I Disabled Copilot (here)](thoughs/i-disabled-copilot.md)
+ - [Fun Can Work](thoughts/fun-can-work.md)
+ - [End of Growth](thoughts/end-of-growth.md)
+ - [Expressing Myself](thoughts/expressing-myself.md)
+ - [My Gender](thoughts/my-gender.md)
+ - [I Disabled Copilot (here)](thoughts/i-disabled-copilot.md)

@@ -1,5 +1,5 @@
 # Hi I'm **Clem**
-
+<script src="./neko/oneko.js"></script>
 <img id="avatar" alt="LGPL3 License" src="avatar.jpeg" />
 <style>
     #avatar {
@@ -10,6 +10,7 @@
         border-radius: 999px;
     }
 </style>
+
 
 I am a software engineer and I love building things like operating systems, compilers, tools, and web engines. This site is my tiny universe it's full of my thoughts, ideas, and stuff I made with my friends.
 
@@ -39,7 +40,8 @@ Meet me in the multiverse
 
  - [Fediverse](https://social.cute.engineering/@smnx) @smnx
  - [Forgejo](https://git.cute.engineering/smnx) @smnx
+ - [BlueSky](https://bsky.app/profile/smnx.bsky.social) @smnx
  - [GitHub](https://github.com/sleepy-monax) @sleepy-monax
+ - [Discord](https://discord.com/users/217368892455124993) @sleepy_monax
  - [X](https://twitter.com/sleepy_monax) @sleepy_monax
- - [Discord](https://discord.com/users/217368892455124993) @sleepy-monax
 
