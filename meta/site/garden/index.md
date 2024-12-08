@@ -15,3 +15,7 @@ This is my wiki/blog/garden. It's a collection of notes, thoughts, and ideas tha
  - [Expressing Myself](thoughts/expressing-myself.md)
  - [My Gender](thoughts/my-gender.md)
  - [I Disabled Copilot (here)](thoughts/i-disabled-copilot.md)
+
+## Other
+
+ - [Quotes I like](quotes.md)
