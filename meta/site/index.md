@@ -40,7 +40,7 @@ Meet me in the multiverse
 
  - [Fediverse](https://social.cute.engineering/@smnx) @smnx
  - [Forgejo](https://git.cute.engineering/smnx) @smnx
- - [BlueSky](https://bsky.app/profile/smnx.bsky.social) @smnx
+ - [BlueSky](https://bsky.app/profile/smnx.sh) @smnx.sh
  - [GitHub](https://github.com/sleepy-monax) @sleepy-monax
  - [Discord](https://discord.com/users/217368892455124993) @sleepy_monax
  - [X](https://twitter.com/sleepy_monax) @sleepy_monax
