@@ -29,6 +29,7 @@ This is all the stuff I made or contributed to:
 
 My friends are also building cool stuff, in no particular order:
 
+ - [Mathilde411](https://mathilde411.fr/) - My beautiful girlfriend.
  - [Lou !](https://habert.me/portfolio) - She is building a [discord clone](https://disclone.carbonlab.dev/) for some reason.
  - [Cyp](https://cyp.sh/) - We built BRUTAL together.
  - [D0p1](https://github.com/d0p1s4m4) - She is currently working on [StupidOS](https://stupidos.d0p1.eu/files/docs/intro-txt.html)
