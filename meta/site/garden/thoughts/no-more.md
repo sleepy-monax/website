@@ -1,3 +1,0 @@
-# No more meaning, no more friends, no more love
-
-They all when away, I lost then, I don't where they when...

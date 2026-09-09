@@ -1,0 +1,10 @@
+{
+    "$schema": "https://schemas.cute.engineering/stable/cutekit.lockfile.v2",
+    "externs": {
+        "cute-engineering/cat": {
+            "commit": "90d53f480be8552ffffed64861c551830a06746d",
+            "git": "https://codeberg.org/cute-engineering/cat",
+            "tag": "v0.14.0"
+        }
+    }
+}
