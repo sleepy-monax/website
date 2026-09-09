@@ -28,7 +28,7 @@ jobs:
       - name: Install CuteKit
         run: |
           pip install git+https://github.com/cute-engineering/cutekit.git@0.12.0
-          python -m cutekit model install
+          python -m cutekit install
           pip install -r .cutekit/extern/cute-engineering/cat/meta/plugins/requirements.txt
 
       - name: Setup Pages
