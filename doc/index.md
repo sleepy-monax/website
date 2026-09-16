@@ -18,11 +18,11 @@ I am a software engineer and I love building things like operating systems, comp
 
 This is all the stuff I made or contributed to:
 
- - [skiftOS](https://codeberg.org/skift/os) : A hobby operating system built from scratch for ARM, x86, and RISC-V architectures. It is designed to be simple, modern, and modular, featuring a modern C++ core library, reactive UI, and a capability-based microkernel.
- - [Vaev](https://codeberg.org/vaev/vaev) : A lightning-fast, lightweight, and secure HTML/CSS engine built for effortless document generation and streamlined web browsing.
- - [Paper Muncher](https://github.com/odoo/paper-muncher) : An experimental document generation tool currently in its early stages.
- - [BRUTAL](https://github.com/brutal-org/brutal) : An operating system inspired by brutalist design that combines the ideals of UNIX from the 1970s with modern technology and engineering.
- - [CuteKit](https://codeberg.org/cute-engineering/cutekit) : The ✨ magical ✨ build system and package manager
+ - [skiftOS](https://codeberg.org/skift/os) : An operating system.
+ - [Vaev](https://codeberg.org/vaev/vaev) : A browser engine.
+ - [Paper Muncher](https://github.com/odoo/paper-muncher) : A document rendering engine.
+ - [BRUTAL](https://github.com/brutal-org/brutal) : Another operating system.
+ - [CuteKit](https://codeberg.org/cute-engineering/cutekit) : A build system and package manager.
  - [Cat](https://cute-engineering.github.io/cat/) : A tiny static site generator.
 
 ## Friends
